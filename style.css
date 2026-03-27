@@ -833,10 +833,7 @@ nav {
     margin: 0 auto;
 }
 
-.achievement-content ul li::marker {
-    color: var(--accent-color);
-}
-
+/* Jarak antar item prestasi */
 .achievement-item {
     display: flex;
     align-items: flex-start;
@@ -853,6 +850,7 @@ nav {
     box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.8);
 }
 
+/* Ikon Bulat */
 .achievement-icon {
     background: linear-gradient(145deg, var(--accent-color), var(--accent-color-3));
     color: var(--primary-dark);
@@ -866,9 +864,29 @@ nav {
     flex-shrink: 0;
 }
 
-.achievement-icon i {
-    font-size: 1.5rem;
+/* --- TAMBAHAN UNTUK FOTO SERTIFIKAT --- */
+
+.achievement-evidence {
+    margin-top: 20px; /* Memberi jarak antara teks p dan foto */
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Garis halus sebagai pemisah */
 }
+
+.certificate-img {
+    max-width: 100%; /* Biar gak luber keluar kotak */
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px; /* Jarak tambahan jika ada lebih dari 1 foto */
+    border: 1px solid var(--accent-color-2); /* Frame tipis biar elegan */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.certificate-img:hover {
+    transform: scale(1.02); /* Efek zoom tipis pas di-hover */
+}
+
+/* --- AKHIR TAMBAHAN --- */
 
 .achievement-content {
     flex-grow: 1;
@@ -882,6 +900,7 @@ nav {
 .achievement-content p {
     color: var(--text-secondary);
     margin-bottom: 0;
+    line-height: 1.6; /* Biar teks deskripsi lebih enak dibaca */
 }
 
 /* ====================
