@@ -356,6 +356,25 @@ nav {
     margin-right: 0; 
 }
 
+.cert-actions {
+    display: flex;          /* Ubah dari inline-flex ke flex */
+    justify-content: center; /* MANTRA UTAMA: Bikin ke tengah horizontal */
+    align-items: center;    /* Tengah secara vertikal (jika ada sisa ruang) */
+    width: 100%;            /* Paksa ambil lebar penuh layar biar centernya akurat */
+    margin-top: -40px;       /* Kasih jarak biar gak terlalu deket sama kartu di atasnya */
+    margin-bottom: 20px;    /* Jarak ke section bawahnya */
+}
+
+/* Styling tombolnya */
+.cert-actions .btn {
+    margin-right: 0;        /* Hapus sisa margin kanan */
+    padding: 0.8rem 1.8rem; /* Ukuran standar biar mantap diklik */
+    font-size: 0.875rem;    /* Sesuaikan dengan font-size global */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .cta-buttons {
     margin-bottom: var(--spacing-m);
 }
