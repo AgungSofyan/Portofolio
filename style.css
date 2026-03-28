@@ -287,8 +287,9 @@ nav {
 .hero {
     min-height: 100vh;
     display: flex;
-    align-items: center;
-    padding-top: 80px;
+    /* align-items: center;  <-- HAPUS ATAU GANTI JADI flex-start */
+    align-items: flex-start; 
+    padding-top: 150px; /* Kasih jarak yang agak lega karena udah gak di-center lagi */
     background: radial-gradient(circle at 10% 20%, rgba(0, 238, 255, 0.08) 0%, rgba(0, 0, 0, 1) 80%);
     position: relative;
     overflow: hidden;
@@ -315,6 +316,7 @@ nav {
     gap: var(--spacing-l);
     position: relative;
     z-index: 2;
+    margin-top: 20px;
 }
 
 .hero-text {
