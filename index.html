@@ -160,14 +160,14 @@
                 <!-- Project 1 -->
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>Broken Access Control</h3>
+                        <h3>Broken Access Control (BAC)</h3>
                         <div class="project-links">
                             <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
                             <a href="https://www.linkedin.com/in/agungsofyan" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                     <div class="project-body">
-                        <p class="project-description">Menemukan celah otorisasi pada endpoint log email notif milik Perusahaan BUMN yang memungkinkan akses data user lain dan data internal tanpa izin. Melakukan pelaporan resmi (Responsible Disclosure) kepada tim CSIRT.</p>
+                        <p class="project-description">Mengidentifikasi kerentanan otorisasi pada endpoint log notifikasi email milik salah satu perusahaan BUMN. Celah ini memungkinkan akses tidak sah terhadap data internal dan informasi pengguna lain. Telah dilakukan pelaporan resmi (Responsible Disclosure) kepada tim CSIRT terkait.</p>
                         <div class="project-tech">
                             <span>OWASP TOP 10</span>
                             <span>Responsible Disclosure</span>
@@ -179,14 +179,14 @@
                 <!-- Project 2 -->
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>Git Exposure</h3>
+                        <h3>Git Exposure & Sensitive Information</h3>
                         <div class="project-links">
                             <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
                             <a href="https://www.linkedin.com/in/agungsofyan" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                     <div class="project-body">
-                        <p class="project-description">Menemukan folder git yang terbuka pada suatu website Media terbesar di Indonesia. Tertanam nya kunci AWS yang dapat mengakses seluruh database dari Perusahaan.</p>
+                        <p class="project-description">Menemukan direktori .git yang terekspos publik pada platform media nasional terbesar di Indonesia. Celah ini mengungkap AWS Access Keys yang berisiko memberikan akses penuh ke basis data perusahaan. Temuan telah dilaporkan dan ditindaklanjuti oleh tim terkait.</p>
                         <div class="project-tech">
                             <span>OWASP TOP 10</span>
                             <span>Responsible Disclosure</span>
@@ -198,14 +198,14 @@
                 <!-- Project 3 -->
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>IDOR</h3>
+                        <h3>Insecure Direct Object Reference (IDOR)</h3>
                         <div class="project-links">
                             <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
                             <a href="https://www.linkedin.com/in/agungsofyan" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                     <div class="project-body">
-                        <p class="project-description">Menemukan sebuah API yang terbuka tanpa otoritasi, dimana penyerang dapat membuka data personal (PII Personal Indentify) dari seorang hanya mengubah Id.</p>
+                        <p class="project-description">Menemukan API endpoint tanpa mekanisme otorisasi yang memadai. Kerentanan ini memungkinkan pihak ketiga untuk mengakses informasi identitas pribadi (PII) pengguna hanya dengan memanipulasi parameter ID.</p>
                         <div class="project-tech">
                             <span>OWASP TOP 10</span>
                             <span>Responsible Disclosure</span>
@@ -217,14 +217,14 @@
                 <!-- Project 4 -->
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>Information Disclosure</h3>
+                        <h3>Hardcoded Credentials Disclosure</h3>
                         <div class="project-links">
                             <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
                             <a href="https://www.linkedin.com/in/agungsofyan" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                     <div class="project-body">
-                        <p class="project-description">Menemukan suatu hardcoded credentials pada suatu website staging, tertanam nya credentials untuk login default kedalam sistem yang dapat memetakan serangan dari penyerang.</p>
+                        <p class="project-description">Menemukan kredensial yang tertanam langsung (hardcoded) pada source code situs staging. Kebocoran ini mencakup akun login default yang dapat digunakan penyerang untuk melakukan pemetaan sistem dan eskalasi hak akses.</p>
                         <div class="project-tech">
                             <span>OWASP TOP 10</span>
                             <span>Responsible Disclosure</span>
@@ -236,14 +236,14 @@
                 <!-- Project 5 -->
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>Data Exposure</h3>
+                        <h3>Sensitive Data Exposure (phpInfo)</h3>
                         <div class="project-links">
                             <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
                             <a href="https://www.linkedin.com/in/agungsofyan" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                     <div class="project-body">
-                        <p class="project-description">Menemukan file phpInfo pada suatu website BUMN, tertanam nya credentials database lengkap dengan info internal yang dapat membahayakan suatu sistem.</p>
+                        <p class="project-description">Mengidentifikasi file phpInfo() yang terekspos pada sistem instansi BUMN. File tersebut mengungkap konfigurasi server, variabel lingkungan, hingga kredensial basis data yang sangat sensitif dan berisiko tinggi terhadap keamanan sistem.</p>
                         <div class="project-tech">
                             <span>OWASP TOP 10</span>
                             <span>Responsible Disclosure</span>
@@ -255,14 +255,14 @@
                 <!-- Project 6 -->
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>Information Disclosure</h3>
+                        <h3>Insecure Debugging (phpDebugBar)</h3>
                         <div class="project-links">
                             <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
                             <a href="https://www.linkedin.com/in/agungsofyan" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                     <div class="project-body">
-                        <p class="project-description">Menemukan phpDebugBar yang terbuka secara publik yang dapat membuka sistem internal, konfigruasi secara real time.</p>
+                        <p class="project-description">Menemukan fitur debugger (phpDebugBar) yang aktif secara publik. Celah ini memungkinkan pemantauan konfigurasi sistem, kueri basis data, dan aktivitas internal secara real-time oleh pihak yang tidak berwenang.</p>
                         <div class="project-tech">
                             <span>OWASP TOP 10</span>
                             <span>Responsible Disclosure</span>
@@ -274,14 +274,14 @@
                 <!-- Project 7 -->
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>Misconfiguration</h3>
+                        <h3>Stack Trace & Verbose Error Handling</h3>
                         <div class="project-links">
                             <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
                             <a href="https://www.linkedin.com/in/agungsofyan" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                     <div class="project-body">
-                        <p class="project-description">Menemukan suatu error yang dapat menampilkan stack trace lengkap dari sistem internal, terbuka nya stack trace lengkap dari database dan sistem internal.</p>
+                        <p class="project-description">Menemukan kesalahan konfigurasi yang menampilkan stack trace lengkap pada sistem internal. Informasi teknis yang bocor mencakup struktur basis data dan alur logika aplikasi yang dapat dimanfaatkan untuk memetakan serangan lebih lanjut.</p>
                         <div class="project-tech">
                             <span>OWASP TOP 10</span>
                             <span>Responsible Disclosure</span>
@@ -293,14 +293,14 @@
                 <!-- Project 8 -->
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>PII Leak</h3>
+                        <h3>Personally Identifiable Information (PII) Leak</h3>
                         <div class="project-links">
                             <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
                             <a href="https://www.linkedin.com/in/agungsofyan" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                     <div class="project-body">
-                        <p class="project-description">Menemukan file rekruitment pada suatu sistem milik BUMN, dmna data peserta terekspose secara publik yang dapat pencurian identitas.</p>
+                        <p class="project-description">Menemukan dokumen rekrutmen pada sistem milik BUMN yang terekspos ke publik. Kebocoran ini mengakibatkan data pribadi peserta dapat diakses secara bebas, yang berisiko pada penyalahgunaan identitas dan pelanggaran privasi.</p>
                         <div class="project-tech">
                             <span>OWASP TOP 10</span>
                             <span>Responsible Disclosure</span>
@@ -310,14 +310,14 @@
                 </div>
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>Information Disclosure</h3>
+                        <h3>Sensitive Backup Exposure</h3>
                         <div class="project-links">
                             <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
                             <a href="https://www.linkedin.com/in/agungsofyan" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                     <div class="project-body">
-                        <p class="project-description">Menemukan file zip backup pada salah satu Kementrian di Indonesia, data tersebut menyangkut data pribadi, sistem, dan konfigruasi.</p>
+                        <p class="project-description">Menemukan file arsip cadangan (backup .zip) yang dapat diakses publik pada salah satu infrastruktur kementerian di Indonesia. File tersebut berisi data pribadi, kode sumber sistem, dan file konfigurasi sensitif.</p>
                         <div class="project-tech">
                             <span>OWASP TOP 10</span>
                             <span>Responsible Disclosure</span>
