@@ -1568,3 +1568,28 @@ footer {
         flex-direction: column;
     }
 }
+
+/* Styling untuk logo perusahaan di timeline */
+.timeline-icon .company-logo-icon {
+    width: 100%;       /* Mengikuti lebar lingkaran icon */
+    height: 100%;      /* Mengikuti tinggi lingkaran icon */
+    object-fit: contain; /* Memastikan logo tidak gepeng/terpotong */
+    border-radius: 50%; /* Membuat gambar logo jadi lingkaran jika perlu */
+    padding: 1px;      /* Memberi sedikit jarak dari pinggir lingkaran */
+    background-color: white; /* Memberi background putih jika logo KAI-nya berwarna biru/gelap */
+}
+
+.achievement-icon .company-logo-icon {
+    width: 100%;             /* Paksa penuhi wadah bulet */
+    height: 100%;            /* Paksa penuhi wadah bulet */
+    object-fit: contain;     /* JANGAN GEPENG, nampilin semua bagian logo KAI */
+    border-radius: 50%;       /* Ikut jadi bulat sempurna */
+    padding: 2px;            /* Kasih napas dikit di pinggir buletan */
+    background-color: white;  /* Kasih background putih biar logo jelas */
+    box-sizing: border-box;  /* Pastikan padding nggak ngerusak ukuran */
+}
+
+/* Tambahan: Pastikan wadah icon-nya motong kalau ada yang bocor */
+.achievement-icon {
+    overflow: hidden;        /* Kunci biar gambar nggak keluar jalur */
+}
